@@ -1,0 +1,79 @@
+form,
+fieldset,
+legend,
+label,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  padding: 5px 10px 10px;
+  border-style: dotted;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: clamp(300px, 800px, 70vw);
+  height: 70vh;
+
+  input,
+  option {
+    text-align: start;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-inline: 10px;
+  }
+}
+
+.tickets,
+.workshops {
+  width: fit-content;
+  margin: auto;
+  padding-inline: 0;
+  text-align: start;
+  list-style: none;
+}
+
+.tickets {
+  text-transform: uppercase;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.field-description {
+  display: flex;
+  gap: 10px;
+}
+
+.error {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: crimson;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 600px) {
+  .buttons {
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+}

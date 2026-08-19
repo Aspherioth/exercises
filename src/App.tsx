@@ -1,5 +1,4 @@
-//import Challenge from "./components/challenge3/Challenge";
-import Challenge from "./components/workshop-registration/Challenge";
+import Challenge from "./challenges/workshop-registration/Challenge";
 
 function App() {
   return (
